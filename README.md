@@ -25,6 +25,6 @@
     <img src="screenshoots/2.png" width="50%"/>
 </div>
 <div>
-    <img src="./screenshoots/1.png" width="50%">
-    <img src="./screenshoots/2.png" width="50%">
+    <img src="./screenshoots/3.png" width="50%">
+    <img src="./screenshoots/4.png" width="50%">
 </div>

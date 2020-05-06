@@ -15,10 +15,11 @@ const PokemonModel = {
       error: false,
       fetching: false,
     }),
-    buildStruture: (state, payload) => ({
-      ...state,
-      payload,
-    }),
+    add: (state, payload) => {
+      state.payload.push(...payload);
+      state.fetching = false;
+      return state;
+    },
     failure: (state) => ({ ...state, error: true, fetching: false }),
   },
   effects: {
@@ -27,28 +28,18 @@ const PokemonModel = {
       const pokemonsResponse = await getPokemons(offset);
       if (pokemonsResponse.ok) {
         const { data } = pokemonsResponse;
-        const temp = await data.results
-          .map(async (v) => {
-            const { name } = v;
-            return getPokemon(name);
-          })
-          .reduce((result, obj) => {
-            return [...result, obj];
-          }, []);
-
-        Promise.all(temp).then(async (res) => {
-          if (res) {
-            const pokemons = await res
-              .map((v) => {
-                const { data: pokemonData } = v;
-                return pokemonData;
-              })
-              .reduce((result, obj) => {
-                return [...result, obj];
-              }, []);
-
-            this.success(pokemons);
-          }
+        loadPokemon(data, (response) => this.success(response));
+      } else {
+        this.failure();
+      }
+    },
+    async requestMorePokemons(offset) {
+      this.request();
+      const pokemonsResponse = await getPokemons(offset);
+      if (pokemonsResponse.ok) {
+        const { data } = pokemonsResponse;
+        loadPokemon(data, (response) => {
+          this.add(response);
         });
       } else {
         this.failure();
@@ -57,4 +48,29 @@ const PokemonModel = {
   },
 };
 
+async function loadPokemon(data, callback) {
+  const temp = await data.results
+    .map(async (v) => {
+      const { name } = v;
+      return getPokemon(name);
+    })
+    .reduce((result, obj) => {
+      return [...result, obj];
+    }, []);
+
+  Promise.all(temp).then(async (res) => {
+    if (res) {
+      const pokemons = await res
+        .map((v) => {
+          const { data: pokemonData } = v;
+          return pokemonData;
+        })
+        .reduce((result, obj) => {
+          return [...result, obj];
+        }, []);
+
+      callback(pokemons);
+    }
+  });
+}
 export default PokemonModel;

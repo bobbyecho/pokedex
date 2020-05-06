@@ -1,14 +1,11 @@
-import React, { useEffect } from 'react';
-import { FlatList, View, StyleSheet, RefreshControl } from 'react-native';
+import React from 'react';
+import { FlatList, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import { useMountEffect } from '@helpers/hooks';
 import PokeCard from '@components/PokeList/PokeCard';
-import PokeLoading from '@components/PokeList/PokeLoading';
+import Container from '@components/Container';
+import PokeFooter from '@components/PokeList/PokeFooter';
 import metrics from '@themes/metrics';
-
-function wait(func) {
-  return new Promise(func);
-}
 
 const styles = StyleSheet.create({
   pokeList: {
@@ -35,6 +32,7 @@ function PokeList(props) {
 
   React.useEffect(() => {
     setRefreshing(false);
+    console.log(payload.length);
   }, [payload]);
 
   function initPokemon() {
@@ -46,24 +44,29 @@ function PokeList(props) {
     initPokemon();
   }
 
-  return fetching ? (
-    <PokeLoading />
-  ) : (
-    <View style={styles.container}>
+  async function fetchMorePoke() {
+    const nextOffset = offset + 10;
+    await setOffset(nextOffset);
+    pokemonActions.requestMorePokemons(nextOffset);
+  }
+
+  return (
+    <Container style={styles.container} loading={fetching && !payload.length}>
       <FlatList
         keyExtractor={(item) => item.id}
         onRefresh={refreshPoke}
         refreshing={refreshing}
         style={styles.pokeList}
         data={payload}
-        renderItem={({ item }) => <PokeCard data={item} />}
+        renderItem={({ item }) => <PokeCard key={item.id} data={item} />}
         numColumns={2}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.pokeListContent}
-        onEndReachedThreshold={0.5}
-        onEndReached={() => console.log('hai')}
+        onEndReachedThreshold={0.2}
+        onEndReached={fetchMorePoke}
+        ListFooterComponent={<PokeFooter show={fetching} />}
       />
-    </View>
+    </Container>
   );
 }
 

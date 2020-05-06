@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 import { View, Image, StyleSheet } from 'react-native';
 import { Card, Title, Paragraph } from 'react-native-paper';
 import { pokeImgUrl } from '@helpers/transforms';
@@ -34,10 +35,15 @@ const styles = StyleSheet.create({
 });
 
 export default ({ data }) => {
-  const { name, weight, height, base_experience: xp } = data;
+  const navigation = useNavigation();
+  const { id, name, weight, height, base_experience: xp } = data;
+
+  function goToDetail() {
+    navigation.navigate('PokeDetail', { pokeId: id });
+  }
 
   return (
-    <Card style={styles.pokeCard}>
+    <Card style={styles.pokeCard} onPress={goToDetail}>
       <View style={styles.imageContainer}>
         <Image source={{ uri: pokeImgUrl(name) }} style={styles.pokeImage} />
       </View>

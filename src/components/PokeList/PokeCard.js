@@ -1,15 +1,14 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { View, Image, StyleSheet } from 'react-native';
-import { Caption, Text } from 'react-native-paper';
-import { pokeImgUrl } from '@helpers/transforms';
+import { Caption, Text, TouchableRipple } from 'react-native-paper';
+import { pokeImgUrl, capitalize } from '@helpers/transforms';
 import metrics from '@themes/metrics';
 import colors from '@themes/colors';
 import PokeElementalIcon from '@components/PokeList/PokeElementalIcon';
 
 const styles = StyleSheet.create({
   pokeCard: {
-    flex: 1,
     alignItems: 'center',
     flexDirection: 'row',
     margin: metrics.distance.xs,
@@ -48,28 +47,29 @@ const styles = StyleSheet.create({
 
 export default ({ data }) => {
   const navigation = useNavigation();
-  const { id, name, types } = data;
+  const { name, types } = data;
   const pokeType = types[0].type.name;
 
   function goToDetail() {
-    navigation.navigate('PokeDetail', { pokeId: id });
+    navigation.navigate('PokeDetail', { pokeData: data });
   }
 
   return (
-    <View style={styles.pokeCard} onPress={goToDetail}>
-      <View style={styles.pokeCardContent}>
-        <Text style={[styles.pokeName, { color: colors[pokeType] }]}>
-          {name}
-        </Text>
-
-        <View style={styles.pokeElement}>
-          <PokeElementalIcon name={pokeType} />
-          <Caption style={styles.pokeType}>{pokeType}</Caption>
+    <TouchableRipple onPress={goToDetail}>
+      <View style={styles.pokeCard}>
+        <View style={styles.pokeCardContent}>
+          <Text style={[styles.pokeName, { color: colors[pokeType] }]}>
+            {capitalize(name)}
+          </Text>
+          <View style={styles.pokeElement}>
+            <PokeElementalIcon name={pokeType} />
+            <Caption style={styles.pokeType}>{pokeType}</Caption>
+          </View>
+        </View>
+        <View style={styles.imageContainer}>
+          <Image source={{ uri: pokeImgUrl(name) }} style={styles.pokeImage} />
         </View>
       </View>
-      <View style={styles.imageContainer}>
-        <Image source={{ uri: pokeImgUrl(name) }} style={styles.pokeImage} />
-      </View>
-    </View>
+    </TouchableRipple>
   );
 };

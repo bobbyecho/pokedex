@@ -1,62 +1,28 @@
 import React from 'react';
-import { StyleSheet, Image, View, ScrollView } from 'react-native';
-import { Title, Headline, Text, Chip } from 'react-native-paper';
+import { StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
-import { useMountEffect } from '@helpers/hooks';
 import Container from '@components/Container';
 import metrics from '@themes/metrics';
-import { pokeImgUrl } from '@helpers/transforms';
 import colors from '@themes/colors';
+import PokeCard from '@components/PokeList/PokeCard';
+import PokeAttribute from '@components/PokeDetail/PokeAttribute';
+import PokeStats from '@components/PokeDetail/PokeStats';
 
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.white,
     height: metrics.screen.fullHeight,
     width: metrics.screen.fullWidth,
-    alignItems: 'center',
   },
-  pokeListContent: {
-    alignItems: 'center',
+  pokeDetailContainer: {
     backgroundColor: colors.white,
+    margin: metrics.distance.xxl,
+    paddingVertical: metrics.distance.m,
   },
-  pokeImage: {
-    marginTop: 20,
-    width: '40%',
-    height: '30%',
-    resizeMode: 'contain',
-  },
-  pokeContainerDescription: {
-    paddingHorizontal: metrics.distance.xl,
-  },
-  pokeRowWrap: {
+  pokeAttributes: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    paddingVertical: 20,
-  },
-  pokeTypeChip: {
-    margin: metrics.distance.s,
-    backgroundColor: '#e6e6fa',
-  },
-  pokeAbilityChip: {
-    margin: metrics.distance.s,
-    backgroundColor: '#ffe4e1',
-  },
-  pokeDetailStat: {
-    flex: 1,
-    width: (metrics.screen.fullWidth * 40) / 100,
-    paddingRight: metrics.distance.m,
-  },
-  pokeSubTitle: {
-    color: colors.info,
-  },
-  pokeDivider: {
-    width: metrics.screen.fullWidth - 40,
-    marginTop: metrics.distance.m,
-    paddingLeft: metrics.distance.m,
-    backgroundColor: colors.black,
-  },
-  pokeTextDivider: {
-    color: colors.white,
+    justifyContent: 'space-around',
+    paddingVertical: metrics.distance.m,
   },
 });
 
@@ -65,52 +31,47 @@ function PokeDetail(props) {
     detailPokemonActions,
     detailPokemon: { payload, fetching },
     route: {
-      params: { pokeId },
+      params: { pokeData },
     },
   } = props;
 
-  useMountEffect(() => {
-    initDetailPokemon();
-  });
+  // useMountEffect(() => {
+  //   initDetailPokemon();
+  // });
 
-  function initDetailPokemon() {
-    detailPokemonActions.requestPokemon(pokeId);
-  }
+  // function initDetailPokemon() {
+  //   detailPokemonActions.requestPokemon(pokeId);
+  // }
+
+  const pokeType = pokeData.types[0].type.name;
+  const pokeHeight = pokeData.height;
+  const pokeWeight = pokeData.weight;
+  const pokeAbility = pokeData.abilities[0].ability.name;
+  const themeColor = colors[pokeType];
+  const pokeStats = pokeData.stats;
 
   return (
-    <Container style={styles.container} loading={fetching}>
-      <Image
-        source={{ uri: pokeImgUrl(payload?.name) }}
-        style={styles.pokeImage}
-      />
-      <Headline style={styles.pokeTitle}>{payload?.name}</Headline>
-      <View style={styles.pokeContainerDescription}>
-        <View style={styles.pokeDivider}>
-          <Title style={styles.pokeTextDivider}>Abilities</Title>
+    <Container style={[styles.container, { backgroundColor: themeColor }]}>
+      <View style={styles.pokeDetailContainer}>
+        <PokeCard data={pokeData} />
+        <View style={styles.pokeAttributes}>
+          <PokeAttribute
+            attribute="height"
+            value={`${pokeHeight}"`}
+            color={themeColor}
+          />
+          <PokeAttribute
+            attribute="weight"
+            value={`${pokeWeight}lbs`}
+            color={themeColor}
+          />
+          <PokeAttribute
+            attribute="ability"
+            value={pokeAbility}
+            color={themeColor}
+          />
         </View>
-        <View style={styles.pokeRowWrap}>
-          {payload?.abilities.map((res) => {
-            return (
-              <Chip key={res?.ability?.name} style={styles.pokeAbilityChip}>
-                {res?.ability?.name.toUpperCase()}
-              </Chip>
-            );
-          })}
-        </View>
-      </View>
-      <View style={styles.pokeContainerDescription}>
-        <View style={styles.pokeDivider}>
-          <Title style={styles.pokeTextDivider}>Types</Title>
-        </View>
-        <View style={styles.pokeRowWrap}>
-          {payload?.types.map((res) => {
-            return (
-              <Chip key={res?.type?.name} style={styles.pokeTypeChip}>
-                {res?.type?.name.toUpperCase()}
-              </Chip>
-            );
-          })}
-        </View>
+        <PokeStats stats={pokeStats} color={themeColor} />
       </View>
     </Container>
   );

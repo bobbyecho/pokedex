@@ -32,7 +32,6 @@ function PokeList(props) {
 
   React.useEffect(() => {
     setRefreshing(false);
-    console.log(payload.length);
   }, [payload]);
 
   function initPokemon() {
@@ -52,7 +51,7 @@ function PokeList(props) {
 
   return (
     <Container style={styles.container} loading={fetching && !payload.length}>
-      <PokeFilter />
+      <PokeFilter onFilter={(v) => console.log(v)} />
       <FlatList
         keyExtractor={(item) => item.id}
         onRefresh={refreshPoke}

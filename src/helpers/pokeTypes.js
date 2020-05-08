@@ -1,4 +1,5 @@
 export default {
+  all: 'All Pokemon',
   normal: 'normal',
   fire: 'fire',
   water: 'water',
@@ -13,7 +14,7 @@ export default {
   poison: 'poison',
   psychic: 'psychic',
   bug: 'bug',
-  dark: '#dark',
+  dark: 'dark',
   steel: 'steel',
   dragon: 'dragon',
   fairy: 'fairy',

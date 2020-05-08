@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     margin: metrics.distance.xs,
     backgroundColor: colors.white,
+    borderRadius: metrics.radius.commonRadius,
   },
   pokeImage: {
     flex: 1,

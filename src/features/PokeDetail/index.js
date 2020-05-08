@@ -9,11 +9,14 @@ import PokeStats from '@components/PokeDetail/PokeStats';
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: colors.white,
     height: metrics.screen.fullHeight,
     width: metrics.screen.fullWidth,
+    justifyContent: 'center',
   },
   pokeDetailContainer: {
+    borderRadius: metrics.radius.commonRadius,
     backgroundColor: colors.white,
     margin: metrics.distance.xxl,
     paddingVertical: metrics.distance.m,

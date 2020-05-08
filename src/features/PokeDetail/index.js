@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { connect } from 'react-redux';
 import Container from '@components/Container';
 import metrics from '@themes/metrics';
 import colors from '@themes/colors';
@@ -28,20 +27,10 @@ const styles = StyleSheet.create({
 
 function PokeDetail(props) {
   const {
-    detailPokemonActions,
-    detailPokemon: { payload, fetching },
     route: {
       params: { pokeData },
     },
   } = props;
-
-  // useMountEffect(() => {
-  //   initDetailPokemon();
-  // });
-
-  // function initDetailPokemon() {
-  //   detailPokemonActions.requestPokemon(pokeId);
-  // }
 
   const pokeType = pokeData.types[0].type.name;
   const pokeHeight = pokeData.height;
@@ -77,12 +66,4 @@ function PokeDetail(props) {
   );
 }
 
-const mapStateToProps = (state) => ({
-  detailPokemon: state.detailPokemon,
-});
-
-const mapDispatchToProps = (dispatch) => ({
-  detailPokemonActions: dispatch.detailPokemon,
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(PokeDetail);
+export default PokeDetail;

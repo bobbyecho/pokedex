@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { useMountEffect } from '@helpers/hooks';
 import PokeCard from '@components/PokeList/PokeCard';
 import Container from '@components/Container';
-import PokeFooter from '@components/PokeList/PokeFooter';
+import PokeListFooter from '@components/PokeList/PokeListFooter';
 import PokeFilter from '@components/PokeList/PokeFilter';
 import metrics from '@themes/metrics';
 
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     padding: metrics.distance.m,
   },
   pokeListContent: {
-    paddingBottom: metrics.distance.xl,
+    paddingBottom: 70,
   },
 });
 
@@ -64,7 +64,7 @@ function PokeList(props) {
         contentContainerStyle={styles.pokeListContent}
         onEndReachedThreshold={0.2}
         onEndReached={fetchMorePoke}
-        ListFooterComponent={<PokeFooter show={fetching} />}
+        ListFooterComponent={<PokeListFooter show={true} />}
       />
     </Container>
   );

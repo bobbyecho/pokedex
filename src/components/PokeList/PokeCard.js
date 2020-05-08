@@ -1,58 +1,75 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { View, Image, StyleSheet } from 'react-native';
-import { Card, Title, Paragraph } from 'react-native-paper';
+import { Caption, Text } from 'react-native-paper';
 import { pokeImgUrl } from '@helpers/transforms';
 import metrics from '@themes/metrics';
 import colors from '@themes/colors';
+import PokeElementalIcon from '@components/PokeList/PokeElementalIcon';
 
 const styles = StyleSheet.create({
   pokeCard: {
-    borderRadius: 0,
+    flex: 1,
+    alignItems: 'center',
+    flexDirection: 'row',
     margin: metrics.distance.xs,
+    backgroundColor: colors.white,
   },
   pokeImage: {
-    justifyContent: 'center',
-    width: 150,
+    flex: 1,
+    width: '100%',
     height: 100,
     resizeMode: 'contain',
   },
   imageContainer: {
-    paddingHorizontal: metrics.distance.s,
-    width: '100%',
-    height: 150,
-    justifyContent: 'center',
+    padding: metrics.distance.s,
+    width: '40%',
+    height: '100%',
   },
   pokeCardContent: {
-    position: 'relative',
-    backgroundColor: '#f0f8ff',
-    alignItems: 'center',
-    padding: metrics.distance.s,
+    flex: 1,
+    alignContent: 'center',
+    paddingLeft: metrics.distance.xl,
+    width: '60%',
   },
-  pokeXp: {
-    color: colors.error,
+  pokeName: {
+    fontWeight: 'bold',
+    fontSize: 32,
+  },
+  pokeType: {
+    fontSize: 15,
+    marginLeft: metrics.distance.s,
+  },
+  pokeElement: {
+    flexDirection: 'row',
+    paddingVertical: metrics.distance.s,
   },
 });
 
 export default ({ data }) => {
   const navigation = useNavigation();
-  const { id, name, weight, height, base_experience: xp } = data;
+  const { id, name, types } = data;
+  const pokeType = types[0].type.name;
 
   function goToDetail() {
     navigation.navigate('PokeDetail', { pokeId: id });
   }
 
   return (
-    <Card style={styles.pokeCard} onPress={goToDetail}>
+    <View style={styles.pokeCard} onPress={goToDetail}>
+      <View style={styles.pokeCardContent}>
+        <Text style={[styles.pokeName, { color: colors[pokeType] }]}>
+          {name}
+        </Text>
+
+        <View style={styles.pokeElement}>
+          <PokeElementalIcon name={pokeType} />
+          <Caption style={styles.pokeType}>{pokeType}</Caption>
+        </View>
+      </View>
       <View style={styles.imageContainer}>
         <Image source={{ uri: pokeImgUrl(name) }} style={styles.pokeImage} />
       </View>
-      <Card.Content style={styles.pokeCardContent}>
-        <Title>{name}</Title>
-        <Paragraph style={styles.pokeXp}>{`XP: ${xp}`}</Paragraph>
-        <Paragraph>{`weight: ${weight}`}</Paragraph>
-        <Paragraph>{`height: ${height}`}</Paragraph>
-      </Card.Content>
-    </Card>
+    </View>
   );
 };

@@ -5,6 +5,7 @@ import { useMountEffect } from '@helpers/hooks';
 import PokeCard from '@components/PokeList/PokeCard';
 import Container from '@components/Container';
 import PokeFooter from '@components/PokeList/PokeFooter';
+import PokeFilter from '@components/PokeList/PokeFilter';
 import metrics from '@themes/metrics';
 
 const styles = StyleSheet.create({
@@ -12,7 +13,6 @@ const styles = StyleSheet.create({
     padding: metrics.distance.m,
   },
   pokeListContent: {
-    alignItems: 'center',
     paddingBottom: metrics.distance.xl,
   },
 });
@@ -52,6 +52,7 @@ function PokeList(props) {
 
   return (
     <Container style={styles.container} loading={fetching && !payload.length}>
+      <PokeFilter />
       <FlatList
         keyExtractor={(item) => item.id}
         onRefresh={refreshPoke}
@@ -59,7 +60,6 @@ function PokeList(props) {
         style={styles.pokeList}
         data={payload}
         renderItem={({ item }) => <PokeCard key={item.id} data={item} />}
-        numColumns={2}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.pokeListContent}
         onEndReachedThreshold={0.2}

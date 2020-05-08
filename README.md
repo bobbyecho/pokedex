@@ -1,5 +1,9 @@
 # Pokedex
 
+#### Download link
+
+[download pokedex.apk](inilink)
+
 #### Made by love with
 
 - React native 0.62.2

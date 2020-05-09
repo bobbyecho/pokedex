@@ -1,0 +1,3563 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pokemon List should render successfully 1`] = `
+<View
+  showsVerticalScrollIndicator={null}
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        false,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 12,
+          "paddingVertical": 16,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/poke-elements/logo.png",
+            }
+          }
+          style={
+            Object {
+              "height": 24,
+              "marginRight": 8,
+              "resizeMode": "contain",
+              "width": 24,
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontSize": 15,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Pokedex
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "marginLeft": -50,
+          }
+        }
+      >
+        <Image
+          source={null}
+          style={
+            Object {
+              "height": 24,
+              "width": 24,
+            }
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 15,
+                "marginHorizontal": 8,
+              },
+              Object {
+                "color": undefined,
+              },
+            ]
+          }
+        >
+          All Pokemon
+        </Text>
+      </View>
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 15,
+            },
+            undefined,
+            Object {
+              "fontFamily": "anticon",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        hideModalContentWhileAnimating={false}
+        onModalHide={[Function]}
+        onModalWillHide={[Function]}
+        onModalWillShow={[Function]}
+        onRequestClose={[Function]}
+        scrollHorizontal={false}
+        scrollOffset={0}
+        scrollOffsetMax={0}
+        scrollTo={null}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "landscape",
+          ]
+        }
+        swipeThreshold={100}
+        transparent={true}
+        visible={false}
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          forwardedRef={[Function]}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "black",
+              "bottom": 0,
+              "height": 1334,
+              "left": 0,
+              "opacity": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 750,
+            }
+          }
+        />
+        <View
+          forwardedRef={[Function]}
+          hideModalContentWhileAnimating={false}
+          onModalHide={[Function]}
+          onModalWillHide={[Function]}
+          onModalWillShow={[Function]}
+          pointerEvents="box-none"
+          scrollHorizontal={false}
+          scrollOffset={0}
+          scrollOffsetMax={0}
+          scrollTo={null}
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "flex-end",
+              "margin": 0,
+              "marginTop": 100,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+            }
+          }
+          supportedOrientations={
+            Array [
+              "portrait",
+              "landscape",
+            ]
+          }
+          swipeThreshold={100}
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "white",
+                "borderTopLeftRadius": 35,
+                "borderTopRightRadius": 35,
+              }
+            }
+          >
+            <RCTScrollView
+              contentContainerStyle={
+                Object {
+                  "paddingVertical": 24,
+                }
+              }
+              showsVerticalScrollIndicator={false}
+            >
+              <View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": undefined,
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        All
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/normal.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#A8A878",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Normal
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/fire.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#F08030",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Fire
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/water.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#6890F0",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Water
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/electric.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#F8D030",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Electric
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/grass.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#78C850",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Grass
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/ice.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#98D8D8",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Ice
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/ground.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#E0C068",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Ground
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/flying.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#A890F0",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Flying
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/ghost.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#705898",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Ghost
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/rock.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#B8A038",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Rock
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/fighting.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#C03028",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Fighting
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/poison.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#A040A0",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Poison
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/psychic.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#F85888",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Psychic
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/bug.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#A8B820",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Bug
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/dark.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#705848",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Dark
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/steel.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#B8B8D0",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Steel
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/dragon.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#7038F8",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Dragon
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      undefined,
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginVertical": 4,
+                        "paddingHorizontal": 24,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/poke-elements/fairy.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 24,
+                            "width": 24,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#EE99AC",
+                            "marginLeft": 12,
+                          }
+                        }
+                      >
+                        Fairy
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityLiveRegion="polite"
+                      accessibilityRole="button"
+                      accessible={true}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "overflow": "hidden",
+                          },
+                          Object {
+                            "borderRadius": 18,
+                            "padding": 6,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 0,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityElementsHidden={true}
+                          allowFontScaling={false}
+                          importantForAccessibility="no-hide-descendants"
+                          pointerEvents="none"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#03dac4",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "transform": Array [
+                                    Object {
+                                      "scaleX": 1,
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                              ],
+                              Object {
+                                "fontFamily": "Material Design Icons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </RCTScrollView>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>
+  <RCTScrollView
+    ListFooterComponent={
+      <_default
+        show={false}
+      />
+    }
+    contentContainerStyle={
+      Object {
+        "paddingBottom": 70,
+      }
+    }
+    data={
+      Array [
+        Object {
+          "abilities": Array [
+            Object {
+              "ability": Object {
+                "name": "imposter",
+                "url": "https://pokeapi.co/api/v2/ability/150/",
+              },
+              "is_hidden": true,
+              "slot": 3,
+            },
+            Object {
+              "ability": Object {
+                "name": "limber",
+                "url": "https://pokeapi.co/api/v2/ability/7/",
+              },
+              "is_hidden": false,
+              "slot": 1,
+            },
+          ],
+          "base_experience": 101,
+          "forms": Array [
+            Object {
+              "name": "ditto",
+              "url": "https://pokeapi.co/api/v2/pokemon-form/132/",
+            },
+          ],
+          "game_indices": Array [
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "white-2",
+                "url": "https://pokeapi.co/api/v2/version/22/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "black-2",
+                "url": "https://pokeapi.co/api/v2/version/21/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "white",
+                "url": "https://pokeapi.co/api/v2/version/18/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "black",
+                "url": "https://pokeapi.co/api/v2/version/17/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "soulsilver",
+                "url": "https://pokeapi.co/api/v2/version/16/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "heartgold",
+                "url": "https://pokeapi.co/api/v2/version/15/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "platinum",
+                "url": "https://pokeapi.co/api/v2/version/14/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "pearl",
+                "url": "https://pokeapi.co/api/v2/version/13/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "diamond",
+                "url": "https://pokeapi.co/api/v2/version/12/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "leafgreen",
+                "url": "https://pokeapi.co/api/v2/version/11/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "firered",
+                "url": "https://pokeapi.co/api/v2/version/10/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "emerald",
+                "url": "https://pokeapi.co/api/v2/version/9/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "sapphire",
+                "url": "https://pokeapi.co/api/v2/version/8/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "ruby",
+                "url": "https://pokeapi.co/api/v2/version/7/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "crystal",
+                "url": "https://pokeapi.co/api/v2/version/6/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "silver",
+                "url": "https://pokeapi.co/api/v2/version/5/",
+              },
+            },
+            Object {
+              "game_index": 132,
+              "version": Object {
+                "name": "gold",
+                "url": "https://pokeapi.co/api/v2/version/4/",
+              },
+            },
+            Object {
+              "game_index": 76,
+              "version": Object {
+                "name": "yellow",
+                "url": "https://pokeapi.co/api/v2/version/3/",
+              },
+            },
+            Object {
+              "game_index": 76,
+              "version": Object {
+                "name": "blue",
+                "url": "https://pokeapi.co/api/v2/version/2/",
+              },
+            },
+            Object {
+              "game_index": 76,
+              "version": Object {
+                "name": "red",
+                "url": "https://pokeapi.co/api/v2/version/1/",
+              },
+            },
+          ],
+          "height": 3,
+          "held_items": Array [
+            Object {
+              "item": Object {
+                "name": "metal-powder",
+                "url": "https://pokeapi.co/api/v2/item/234/",
+              },
+              "version_details": Array [
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "ultra-sun",
+                    "url": "https://pokeapi.co/api/v2/version/29/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "moon",
+                    "url": "https://pokeapi.co/api/v2/version/28/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "y",
+                    "url": "https://pokeapi.co/api/v2/version/24/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "x",
+                    "url": "https://pokeapi.co/api/v2/version/23/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "white-2",
+                    "url": "https://pokeapi.co/api/v2/version/22/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "black-2",
+                    "url": "https://pokeapi.co/api/v2/version/21/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "white",
+                    "url": "https://pokeapi.co/api/v2/version/18/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "black",
+                    "url": "https://pokeapi.co/api/v2/version/17/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "soulsilver",
+                    "url": "https://pokeapi.co/api/v2/version/16/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "heartgold",
+                    "url": "https://pokeapi.co/api/v2/version/15/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "platinum",
+                    "url": "https://pokeapi.co/api/v2/version/14/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "pearl",
+                    "url": "https://pokeapi.co/api/v2/version/13/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "diamond",
+                    "url": "https://pokeapi.co/api/v2/version/12/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "leafgreen",
+                    "url": "https://pokeapi.co/api/v2/version/11/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "firered",
+                    "url": "https://pokeapi.co/api/v2/version/10/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "emerald",
+                    "url": "https://pokeapi.co/api/v2/version/9/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "sapphire",
+                    "url": "https://pokeapi.co/api/v2/version/8/",
+                  },
+                },
+                Object {
+                  "rarity": 5,
+                  "version": Object {
+                    "name": "ruby",
+                    "url": "https://pokeapi.co/api/v2/version/7/",
+                  },
+                },
+              ],
+            },
+            Object {
+              "item": Object {
+                "name": "quick-powder",
+                "url": "https://pokeapi.co/api/v2/item/251/",
+              },
+              "version_details": Array [
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "ultra-sun",
+                    "url": "https://pokeapi.co/api/v2/version/29/",
+                  },
+                },
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "moon",
+                    "url": "https://pokeapi.co/api/v2/version/28/",
+                  },
+                },
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "y",
+                    "url": "https://pokeapi.co/api/v2/version/24/",
+                  },
+                },
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "x",
+                    "url": "https://pokeapi.co/api/v2/version/23/",
+                  },
+                },
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "white-2",
+                    "url": "https://pokeapi.co/api/v2/version/22/",
+                  },
+                },
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "black-2",
+                    "url": "https://pokeapi.co/api/v2/version/21/",
+                  },
+                },
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "white",
+                    "url": "https://pokeapi.co/api/v2/version/18/",
+                  },
+                },
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "black",
+                    "url": "https://pokeapi.co/api/v2/version/17/",
+                  },
+                },
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "soulsilver",
+                    "url": "https://pokeapi.co/api/v2/version/16/",
+                  },
+                },
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "heartgold",
+                    "url": "https://pokeapi.co/api/v2/version/15/",
+                  },
+                },
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "platinum",
+                    "url": "https://pokeapi.co/api/v2/version/14/",
+                  },
+                },
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "pearl",
+                    "url": "https://pokeapi.co/api/v2/version/13/",
+                  },
+                },
+                Object {
+                  "rarity": 50,
+                  "version": Object {
+                    "name": "diamond",
+                    "url": "https://pokeapi.co/api/v2/version/12/",
+                  },
+                },
+              ],
+            },
+          ],
+          "id": 132,
+          "is_default": true,
+          "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/132/encounters",
+          "moves": Array [
+            Object {
+              "move": Object {
+                "name": "transform",
+                "url": "https://pokeapi.co/api/v2/move/144/",
+              },
+              "version_group_details": Array [
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "ultra-sun-ultra-moon",
+                    "url": "https://pokeapi.co/api/v2/version-group/18/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "sun-moon",
+                    "url": "https://pokeapi.co/api/v2/version-group/17/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "omega-ruby-alpha-sapphire",
+                    "url": "https://pokeapi.co/api/v2/version-group/16/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "x-y",
+                    "url": "https://pokeapi.co/api/v2/version-group/15/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "black-2-white-2",
+                    "url": "https://pokeapi.co/api/v2/version-group/14/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "xd",
+                    "url": "https://pokeapi.co/api/v2/version-group/13/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "colosseum",
+                    "url": "https://pokeapi.co/api/v2/version-group/12/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "black-white",
+                    "url": "https://pokeapi.co/api/v2/version-group/11/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "heartgold-soulsilver",
+                    "url": "https://pokeapi.co/api/v2/version-group/10/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "platinum",
+                    "url": "https://pokeapi.co/api/v2/version-group/9/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "diamond-pearl",
+                    "url": "https://pokeapi.co/api/v2/version-group/8/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "firered-leafgreen",
+                    "url": "https://pokeapi.co/api/v2/version-group/7/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "emerald",
+                    "url": "https://pokeapi.co/api/v2/version-group/6/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "ruby-sapphire",
+                    "url": "https://pokeapi.co/api/v2/version-group/5/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "crystal",
+                    "url": "https://pokeapi.co/api/v2/version-group/4/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "gold-silver",
+                    "url": "https://pokeapi.co/api/v2/version-group/3/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "yellow",
+                    "url": "https://pokeapi.co/api/v2/version-group/2/",
+                  },
+                },
+                Object {
+                  "level_learned_at": 1,
+                  "move_learn_method": Object {
+                    "name": "level-up",
+                    "url": "https://pokeapi.co/api/v2/move-learn-method/1/",
+                  },
+                  "version_group": Object {
+                    "name": "red-blue",
+                    "url": "https://pokeapi.co/api/v2/version-group/1/",
+                  },
+                },
+              ],
+            },
+          ],
+          "name": "ditto",
+          "order": 197,
+          "species": Object {
+            "name": "ditto",
+            "url": "https://pokeapi.co/api/v2/pokemon-species/132/",
+          },
+          "sprites": Object {
+            "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png",
+            "back_female": null,
+            "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/132.png",
+            "back_shiny_female": null,
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+            "front_female": null,
+            "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png",
+            "front_shiny_female": null,
+          },
+          "stats": Array [
+            Object {
+              "base_stat": 48,
+              "effort": 0,
+              "stat": Object {
+                "name": "speed",
+                "url": "https://pokeapi.co/api/v2/stat/6/",
+              },
+            },
+            Object {
+              "base_stat": 48,
+              "effort": 0,
+              "stat": Object {
+                "name": "special-defense",
+                "url": "https://pokeapi.co/api/v2/stat/5/",
+              },
+            },
+            Object {
+              "base_stat": 48,
+              "effort": 0,
+              "stat": Object {
+                "name": "special-attack",
+                "url": "https://pokeapi.co/api/v2/stat/4/",
+              },
+            },
+            Object {
+              "base_stat": 48,
+              "effort": 0,
+              "stat": Object {
+                "name": "defense",
+                "url": "https://pokeapi.co/api/v2/stat/3/",
+              },
+            },
+            Object {
+              "base_stat": 48,
+              "effort": 0,
+              "stat": Object {
+                "name": "attack",
+                "url": "https://pokeapi.co/api/v2/stat/2/",
+              },
+            },
+            Object {
+              "base_stat": 48,
+              "effort": 1,
+              "stat": Object {
+                "name": "hp",
+                "url": "https://pokeapi.co/api/v2/stat/1/",
+              },
+            },
+          ],
+          "types": Array [
+            Object {
+              "slot": 1,
+              "type": Object {
+                "name": "normal",
+                "url": "https://pokeapi.co/api/v2/type/1/",
+              },
+            },
+          ],
+          "weight": 40,
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReached={[Function]}
+    onEndReachedThreshold={0.7}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onRefresh={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+      />
+    }
+    refreshing={false}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    showsVerticalScrollIndicator={false}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "padding": 12,
+      }
+    }
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <RCTRefreshControl />
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Array [
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": 4,
+                "flexDirection": "row",
+                "margin": 4,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignContent": "center",
+                  "flex": 1,
+                  "paddingLeft": 20,
+                  "width": "60%",
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "System",
+                      "fontWeight": "400",
+                      "textAlign": "left",
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 32,
+                        "fontWeight": "bold",
+                      },
+                      Object {
+                        "color": "#A8A878",
+                      },
+                    ],
+                  ]
+                }
+              >
+                Ditto
+              </Text>
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "paddingVertical": 8,
+                  }
+                }
+              >
+                <Image
+                  source={
+                    Object {
+                      "testUri": "../../../src/assets/images/poke-elements/normal.png",
+                    }
+                  }
+                  style={
+                    Object {
+                      "height": 24,
+                      "width": 24,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                        "textAlign": "left",
+                      },
+                      Array [
+                        Object {
+                          "color": "rgba(0, 0, 0, 0.54)",
+                          "fontFamily": "System",
+                          "fontWeight": "400",
+                          "textAlign": "left",
+                          "writingDirection": "ltr",
+                        },
+                        Array [
+                          Object {
+                            "fontSize": 12,
+                            "letterSpacing": 0.4,
+                            "lineHeight": 20,
+                            "marginVertical": 2,
+                          },
+                          Object {
+                            "fontSize": 15,
+                            "marginLeft": 8,
+                          },
+                        ],
+                        Array [
+                          Object {
+                            "fontSize": 12,
+                            "letterSpacing": 0.4,
+                            "lineHeight": 20,
+                            "marginVertical": 2,
+                          },
+                          Object {
+                            "fontSize": 15,
+                            "marginLeft": 8,
+                          },
+                        ],
+                      ],
+                    ]
+                  }
+                >
+                  normal
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "padding": 8,
+                  "width": "40%",
+                }
+              }
+            >
+              <Image
+                onL={true}
+                source={
+                  Object {
+                    "uri": "https://img.pokemondb.net/artwork/ditto.jpg",
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                    "height": 100,
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;

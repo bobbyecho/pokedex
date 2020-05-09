@@ -2,7 +2,7 @@
 
 #### Download link
 
-[download pokedex.apk](inilink)
+[download pokedex.apk](https://drive.google.com/file/d/1xAP4LroUNDNY89L4NLlohyCIcUBMRyoR/view?usp=sharing)
 
 #### Made by love with
 

@@ -68,7 +68,11 @@ export default ({ data }) => {
           </View>
         </View>
         <View style={styles.imageContainer}>
-          <Image source={{ uri: pokeImgUrl(name) }} style={styles.pokeImage} />
+          <Image
+            source={{ uri: pokeImgUrl(name) }}
+            style={styles.pokeImage}
+            onL
+          />
         </View>
       </View>
     </TouchableRipple>

@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 });
 
 function Line({ name, value, color }) {
-  console.log(value);
+  console.log(name, value);
   return (
     <View style={styles.pokeLineContainer}>
       <Text style={styles.lineTitle}>{capitalize(name)}</Text>
@@ -29,7 +29,7 @@ function Line({ name, value, color }) {
         style={[
           styles.pokeLine,
           {
-            width: (metrics.screen.fullWidth * value) / 100 - 125,
+            width: (metrics.screen.fullWidth * value) / 265,
             backgroundColor: color,
           },
         ]}

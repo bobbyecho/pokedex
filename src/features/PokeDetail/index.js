@@ -6,6 +6,7 @@ import colors from '@themes/colors';
 import PokeCard from '@components/PokeList/PokeCard';
 import PokeAttribute from '@components/PokeDetail/PokeAttribute';
 import PokeStats from '@components/PokeDetail/PokeStats';
+import { capitalize } from '@helpers/transforms';
 
 const styles = StyleSheet.create({
   container: {
@@ -48,18 +49,18 @@ function PokeDetail(props) {
         <PokeCard data={pokeData} />
         <View style={styles.pokeAttributes}>
           <PokeAttribute
-            attribute="height"
+            attribute="Height"
             value={`${pokeHeight}"`}
             color={themeColor}
           />
           <PokeAttribute
-            attribute="weight"
+            attribute="Weight"
             value={`${pokeWeight}lbs`}
             color={themeColor}
           />
           <PokeAttribute
-            attribute="ability"
-            value={pokeAbility}
+            attribute="Ability"
+            value={capitalize(pokeAbility)}
             color={themeColor}
           />
         </View>

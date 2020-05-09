@@ -1,6 +1,6 @@
 import { get } from './xhr';
 
-export function getPokemons(offset, limit = 10) {
+export function getPokemons(offset, limit = 20) {
   return get('/pokemon', {
     offset,
     limit,

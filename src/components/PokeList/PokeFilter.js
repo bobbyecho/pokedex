@@ -111,6 +111,7 @@ export default ({ onFilter }) => {
                   const typeString = pokeTypes[v];
                   return (
                     <TouchableRipple
+                      key={typeString}
                       onPress={() => onFilterSelected(typeString)}>
                       <View style={styles.radioFilterContainer}>
                         <View style={styles.filterIconTextWrapper}>

@@ -47,7 +47,7 @@ export default function ({ stats, color }) {
           base_stat: baseStat,
         } = v;
 
-        return <Line name={name} value={baseStat} color={color} />;
+        return <Line key={name} name={name} value={baseStat} color={color} />;
       })}
     </View>
   );

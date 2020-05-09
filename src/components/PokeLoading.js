@@ -1,19 +1,30 @@
 import React from 'react';
+
 import Lottie from 'lottie-react-native';
-import { StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  pokeLoading: {
+  container: {
     backgroundColor: '#f0f8ff',
+  },
+  subContainer: {
+    width: 200,
+    height: '100%',
+    alignSelf: 'center',
+    justifyContent: 'center',
   },
 });
 
-export default () => {
+export default ({ loadingStyle = {} }) => {
   return (
-    <Lottie
-      source={require('@assets/lottie/pokeloading.json')}
-      autoPlay={true}
-      style={styles.pokeLoading}
-    />
+    <View style={styles.container}>
+      <View style={styles.subContainer}>
+        <Lottie
+          source={require('@assets/lottie/pokeloading.json')}
+          autoPlay={true}
+          style={loadingStyle}
+        />
+      </View>
+    </View>
   );
 };

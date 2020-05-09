@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
     marginHorizontal: metrics.distance.m,
   },
 });
+
 export default ({ show }) => {
   return show ? (
     <View style={styles.container}>

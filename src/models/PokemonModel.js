@@ -1,19 +1,27 @@
-import { getPokemon, getPokemons } from '@helpers/network';
+import { getPokemons, getPokemonTypes } from '@helpers/network';
+import { loadPokemon, loadFilterPokemon } from '@helpers/services/pokemon';
 
 const PokemonModel = {
   state: {
     payload: [],
     fetching: false,
+    fetchingFilter: false,
     error: false,
   },
   reducers: {
     reset: (state) => ({ ...state, fetching: false, error: false }),
     request: (state) => ({ ...state, fetching: true, error: false }),
+    requestFilter: (state) => ({
+      ...state,
+      fetchingFilter: true,
+      error: false,
+    }),
     success: (state, payload) => ({
       ...state,
       payload,
       error: false,
       fetching: false,
+      fetchingFilter: false,
     }),
     add: (state, payload) => {
       state.payload.push(...payload);
@@ -45,32 +53,19 @@ const PokemonModel = {
         this.failure();
       }
     },
+    async requestPokemonTypes(id) {
+      this.requestFilter();
+      const response = await getPokemonTypes(id);
+      if (response.ok) {
+        const {
+          data: { pokemon: pokemons },
+        } = response;
+        loadFilterPokemon(pokemons, (pokemon) => this.success(pokemon));
+      } else {
+        this.failure();
+      }
+    },
   },
 };
 
-async function loadPokemon(data, callback) {
-  const temp = await data.results
-    .map(async (v) => {
-      const { name } = v;
-      return getPokemon(name);
-    })
-    .reduce((result, obj) => {
-      return [...result, obj];
-    }, []);
-
-  Promise.all(temp).then(async (res) => {
-    if (res) {
-      const pokemons = await res
-        .map((v) => {
-          const { data: pokemonData } = v;
-          return pokemonData;
-        })
-        .reduce((result, obj) => {
-          return [...result, obj];
-        }, []);
-
-      callback(pokemons);
-    }
-  });
-}
 export default PokemonModel;

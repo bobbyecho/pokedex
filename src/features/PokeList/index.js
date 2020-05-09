@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, StyleSheet } from 'react-native';
+import { FlatList, StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
 import { useMountEffect } from '@helpers/hooks';
 import PokeCard from '@components/PokeList/PokeCard';
@@ -7,6 +7,7 @@ import Container from '@components/Container';
 import PokeListFooter from '@components/PokeList/PokeListFooter';
 import PokeFilter from '@components/PokeList/PokeFilter';
 import metrics from '@themes/metrics';
+import PokeLoading from '@components/PokeLoading';
 
 const styles = StyleSheet.create({
   pokeList: {
@@ -15,12 +16,15 @@ const styles = StyleSheet.create({
   pokeListContent: {
     paddingBottom: 70,
   },
+  filterLoading: {
+    marginTop: -(metrics.screen.fullHeight * 10) / 100,
+  },
 });
 
 function PokeList(props) {
   const {
     pokemonActions,
-    pokemons: { payload, fetching },
+    pokemons: { payload, fetching, fetchingFilter },
   } = props;
 
   const [offset, setOffset] = React.useState(10);
@@ -49,22 +53,36 @@ function PokeList(props) {
     pokemonActions.requestMorePokemons(nextOffset);
   }
 
+  async function doPokeFilter(key) {
+    if (key === 'All Pokemon') {
+      initPokemon();
+    } else {
+      pokemonActions.requestPokemonTypes(key);
+    }
+  }
+
   return (
-    <Container style={styles.container} loading={fetching && !payload.length}>
-      <PokeFilter onFilter={(v) => console.log(v)} />
-      <FlatList
-        keyExtractor={(item) => item.id}
-        onRefresh={refreshPoke}
-        refreshing={refreshing}
-        style={styles.pokeList}
-        data={payload}
-        renderItem={({ item }) => <PokeCard key={item.id} data={item} />}
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={styles.pokeListContent}
-        onEndReachedThreshold={0.2}
-        onEndReached={fetchMorePoke}
-        ListFooterComponent={<PokeListFooter show={true} />}
-      />
+    <Container loading={fetching && !payload.length}>
+      <PokeFilter onFilter={doPokeFilter} />
+      {!fetchingFilter ? (
+        <FlatList
+          keyExtractor={(item) => item.id.toString()}
+          onRefresh={refreshPoke}
+          refreshing={refreshing}
+          style={styles.pokeList}
+          data={payload}
+          renderItem={({ item }) => (
+            <PokeCard key={item.id.toString()} data={item} />
+          )}
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.pokeListContent}
+          onEndReachedThreshold={0.2}
+          onEndReached={fetchMorePoke}
+          ListFooterComponent={<PokeListFooter show={true} />}
+        />
+      ) : (
+        <PokeLoading loadingStyle={styles.filterLoading} />
+      )}
     </Container>
   );
 }

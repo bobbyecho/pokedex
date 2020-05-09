@@ -7,6 +7,10 @@ export function getPokemons(offset, limit = 10) {
   });
 }
 
-export function getPokemon(name) {
-  return get(`/pokemon/${name}`);
+export function getPokemon(key) {
+  return get(`/pokemon/${key}`);
+}
+
+export function getPokemonTypes(key) {
+  return get(`/type/${key}`);
 }

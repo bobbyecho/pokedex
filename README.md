@@ -1,5 +1,7 @@
 # Pokedex
 
+![Github Actions](https://github.com/bobbyecho/pokedex/workflows/CI/badge.svg?branch=master)
+
 #### Download link
 
 [download pokedex.apk](https://drive.google.com/file/d/1xAP4LroUNDNY89L4NLlohyCIcUBMRyoR/view?usp=sharing)

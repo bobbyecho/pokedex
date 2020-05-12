@@ -1,6 +1,6 @@
 # Pokedex
 
-![Github Actions](https://github.com/bobbyecho/pokedex/workflows/CI/badge.svg?branch=master)
+![Github Actions](https://github.com/bobbyecho/pokedex/workflows/Pokedex%20CI/CD/badge.svg?branch=master)
 
 #### Download link
 
